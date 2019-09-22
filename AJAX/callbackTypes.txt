@@ -1,0 +1,23 @@
+
+Asynchronous -  "START NOW, FINISH LATER"
+
+Callback  - vanilla type of using a function and that the data will be inserted to another thread so that
+            the data will not be interrupted by the next functions. After all the other functions are finished,
+            in order to use the data that was in another thread, we use the 'Callback' function that requests
+            back the finished data from the first one. 
+
+Promises  - modern way of using callbacks in ES 6 by using the 'Promises' function and after a that certain 
+            function ends, another function can begin by using the '.then' || if you want to catch an error, 
+            use the '.catch' method
+
+Generator - a new way of using using callbacks in ES 6 where the function should have '*' after it 
+            (ex: function*() {}....), * - uses the Generator method of using callbacks.. It uses 'yield'
+            where when a line of codes is being interpreted and a yield is after it (lines codes are read
+            from right to left), the yield would pause the other line of codes after it.
+
+            (Ex:   var example = yield $.get('GET',url,true) - in this line of codes, it will first interpret
+            the jQuery method of getting an HTTP and after passing the yield method, it will pause. Meaning that
+            the variable example will not have access to the HTTP request as it needs a callback for it to be
+            used)
+
+            In order to use it, it needs to use a '.next' method so that the variable can use the get method.

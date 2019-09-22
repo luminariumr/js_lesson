@@ -1,0 +1,6 @@
+cd = change directory
+cd ~ = back
+ls = list
+mkdir = make new directory
+touch = create file
+code = open folder on vscode
